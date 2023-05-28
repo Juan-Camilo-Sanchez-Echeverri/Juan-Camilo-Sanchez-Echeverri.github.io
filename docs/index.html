@@ -6,22 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <title>Juan Sanchez</title>
 </head>
 
 <body>
   <header>
-    <div class="header__container">
+    <section class="header__container">
       <h5>Hey Bienvenido. Soy</h5>
       <h1>Camilo Sanchez</h1>
       <h5 class="text-light">Desarrollador Backend Jr</h5>
-      <section class="downloads">
+
+      <article class="downloads">
         <a href="./HV.JuanCamiloSanchezEcheverri.pdf" download class="btn">Descargar CV</a>
         <a href="#contact" class="btn btn-primary">Déjame un mensaje</a>
-      </section>
-      <div class="header__socials">
+      </article>
+
+      <article class="header__socials">
         <a href="https://www.linkedin.com/in/juan-camilo-sanchez-echeverri/" target="_blank">
           <i class="bi bi-linkedin"></i>
         </a>
@@ -34,10 +36,10 @@
         <a href="https://www.instagram.com/camilo_07s/" target="_blank">
           <i class="bi bi-instagram"></i>
         </a>
-      </div>
+      </article>
 
       <a href="#contact" class="scroll__down">Contacto</a>
-    </div>
+    </section>
 
     <nav>
       <a href="#"><i class="bi bi-house"></i></a>
@@ -52,7 +54,7 @@
       <h5>Acerca de mi</h5>
       <h2>Mi perfil</h2>
 
-      <div class="container about__container">
+      <article class="container about__container">
         <div class="about__me">
           <div class="about__me-image">
             <img src="./img/fotoDePerfil.jpg" alt="Foto Juan" />
@@ -72,138 +74,142 @@
               <small>3+ proyectos</small>
             </article>
           </div>
+
           <p>
             Desarrollador <strong>Java JR</strong> con manejo de tecnologías
             de Spring Boot,bases de datos relacionales como MySQL y no
             relacionales como MongoDB. Con muchas ganas de aprender y aplicar
             sus conocimientos.
           </p>
+
           <a href="#contact" class="btn btn-primary"> Contacto </a>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h5>Mis habilidades</h5>
+      <h2>Mi experiencia</h2>
+
+      <div class="container experience__container">
+        <div class="experience__frontend">
+          <h3>Desarrollo Frontend</h3>
+          <div class="experience__content">
+            <article class="experience__details">
+              <i class="bi bi-patch-check-fill experience__details-icon"></i>
+              <div>
+                <h4>HTML</h4>
+                <small class="text-light"> Intermedio </small>
+              </div>
+            </article>
+            <article class="experience__details">
+              <i class="bi bi-patch-check-fill experience__details-icon"></i>
+              <div>
+                <h4>CSS</h4>
+                <small class="text-light"> Intermedio </small>
+              </div>
+            </article>
+            <article class="experience__details">
+              <i class="bi bi-patch-check-fill experience__details-icon"></i>
+              <div>
+                <h4>JavaScript</h4>
+                <small class="text-light"> Intermedio </small>
+              </div>
+            </article>
+            <article class="experience__details">
+              <i class="bi bi-patch-check-fill experience__details-icon"></i>
+              <div>
+                <h4>React</h4>
+                <small class="text-light"> Iniciando </small>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="experience__backend">
+          <h3>Desarrollo Backend</h3>
+          <div class="experience__content">
+            <article class="experience__details">
+              <i class="bi bi-database-fill-check experience__details-icon"></i>
+              <div>
+                <h4>MongoDB</h4>
+                <small class="text-light"> Basico </small>
+              </div>
+            </article>
+
+            <article class="experience__details">
+              <i class="bi bi-database-fill-check experience__details-icon"></i>
+              <div>
+                <h4>NodeJS</h4>
+                <small class="text-light"> Basico </small>
+              </div>
+            </article>
+            <article class="experience__details">
+              <i class="bi bi-database-fill-check experience__details-icon"></i>
+              <div>
+                <h4>Java</h4>
+                <small class="text-light"> Intermedio </small>
+              </div>
+            </article>
+            <article class="experience__details">
+              <i class="bi bi-database-fill-check experience__details-icon"></i>
+              <div>
+                <h4>MySQL</h4>
+                <small class="text-light"> Intermedio </small>
+              </div>
+            </article>
+            <article class="experience__details">
+              <i class="bi bi-database-fill-check experience__details-icon"></i>
+              <div>
+                <h4>Spring</h4>
+                <small class="text-light"> Basico </small>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
-  </main>
-  <section id="experience">
-    <h5>Mis habilidades</h5>
-    <h2>Mi experiencia</h2>
 
-    <div class="container experience__container">
-      <div class="experience__frontend">
-        <h3>Desarrollo Frontend</h3>
-        <div class="experience__content">
-          <article class="experience__details">
-            <i class="bi bi-patch-check-fill experience__details-icon"></i>
-            <div>
-              <h4>HTML</h4>
-              <small class="text-light"> Intermedio </small>
-            </div>
+    <section id="contact">
+      <h5>Déjame un mensaje</h5>
+      <h2>Contacto</h2>
+
+      <div class="container contact__container">
+        <div class="contact__options">
+          <article class="contact__option">
+            <i class="bi bi-envelope contact__option-icon"></i>
+            <h4>Correo</h4>
+            <h5>Tu correo electrónico</h5>
+            <a href="mailto:juancamilosanche65@gmail.com" target="_blank">
+              Enviar mensaje
+            </a>
           </article>
-          <article class="experience__details">
-            <i class="bi bi-patch-check-fill experience__details-icon"></i>
-            <div>
-              <h4>CSS</h4>
-              <small class="text-light"> Intermedio </small>
-            </div>
+          <article class="contact__option">
+            <i class="bi bi-messenger contact__option-icon"></i>
+            <h4>Messenger</h4>
+            <a href="#" target="_blank"> Enviar mensaje</a>
           </article>
-          <article class="experience__details">
-            <i class="bi bi-patch-check-fill experience__details-icon"></i>
-            <div>
-              <h4>JavaScript</h4>
-              <small class="text-light"> Intermedio </small>
-            </div>
-          </article>
-          <article class="experience__details">
-            <i class="bi bi-patch-check-fill experience__details-icon"></i>
-            <div>
-              <h4>React</h4>
-              <small class="text-light"> Iniciando </small>
-            </div>
+          <article class="contact__option">
+            <i class="bi bi-whatsapp contact__option-icon"></i>
+            <h4>Whatsapp</h4>
+            <h5>Tu número de whatsapp</h5>
+            <a href="https://wa.me/573008348956" target="_blank">Enviar Mensaje
+            </a>
           </article>
         </div>
-      </div>
-      <div class="experience__backend">
-        <h3>Desarrollo Backend</h3>
-        <div class="experience__content">
-          <article class="experience__details">
-            <i class="bi bi-database-fill-check experience__details-icon"></i>
-            <div>
-              <h4>MongoDB</h4>
-              <small class="text-light"> Basico </small>
-            </div>
-          </article>
 
-          <article class="experience__details">
-            <i class="bi bi-database-fill-check experience__details-icon"></i>
-            <div>
-              <h4>NodeJS</h4>
-              <small class="text-light"> Basico </small>
-            </div>
-          </article>
-          <article class="experience__details">
-            <i class="bi bi-database-fill-check experience__details-icon"></i>
-            <div>
-              <h4>Java</h4>
-              <small class="text-light"> Intermedio </small>
-            </div>
-          </article>
-          <article class="experience__details">
-            <i class="bi bi-database-fill-check experience__details-icon"></i>
-            <div>
-              <h4>MySQL</h4>
-              <small class="text-light"> Intermedio </small>
-            </div>
-          </article>
-          <article class="experience__details">
-            <i class="bi bi-database-fill-check experience__details-icon"></i>
-            <div>
-              <h4>Spring</h4>
-              <small class="text-light"> Basico </small>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h5>Déjame un mensaje</h5>
-    <h2>Contacto</h2>
-
-    <div class="container contact__container">
-      <div class="contact__options">
-        <article class="contact__option">
-          <i class="bi bi-envelope contact__option-icon"></i>
-          <h4>Correo</h4>
-          <h5>Tu correo electrónico</h5>
-          <a href="mailto:juancamilosanche65@gmail.com" target="_blank">
+        <form>
+          <input type="text" name="name" placeholder="Escriba su nombre" required />
+          <input type="email" name="email" placeholder="Escriba su correo" required />
+          <textarea name="message" rows="7" placeholder="Escriba su mensaje" required></textarea>
+          <button type="submit" class="btn btn-primary">
             Enviar mensaje
-          </a>
-        </article>
-        <article class="contact__option">
-          <i class="bi bi-messenger contact__option-icon"></i>
-          <h4>Messenger</h4>
-          <a href="#" target="_blank"> Enviar mensaje</a>
-        </article>
-        <article class="contact__option">
-          <i class="bi bi-whatsapp contact__option-icon"></i>
-          <h4>Whatsapp</h4>
-          <h5>Tu número de whatsapp</h5>
-          <a href="https://wa.me/573008348956" target="_blank">Enviar Mensaje
-          </a>
-        </article>
+          </button>
+          <span></span>
+        </form>
       </div>
-
-      <form>
-        <input type="text" name="name" placeholder="Escriba su nombre" required />
-        <input type="email" name="email" placeholder="Escriba su correo" required />
-        <textarea name="message" rows="7" placeholder="Escriba su mensaje" required></textarea>
-        <button type="submit" class="btn btn-primary">
-          Enviar mensaje
-        </button>
-        <span></span>
-      </form>
-    </div>
-  </section>
+    </section>
+  </main>
   <footer>
     <ul class="permalinks">
       <li><a href="#">Inicio</a></li>
@@ -212,10 +218,8 @@
       <li><a href="#contact">Contacto</a></li>
     </ul>
     <div class="footer__copyright">
-      <small>&copy; Juan Camilo Sanchez</small>
+      <small>&copy; Juan Camilo Sanchez Echeverri</small>
     </div>
-
-
   </footer>
 </body>
 
