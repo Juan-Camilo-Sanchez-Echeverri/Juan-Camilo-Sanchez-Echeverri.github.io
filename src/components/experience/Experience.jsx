@@ -11,6 +11,7 @@ import {
 	SiGit,
 	SiMicrosoftazure,
 	SiTypescript,
+	SiDocker,
 } from 'react-icons/si';
 import './experience.css';
 
@@ -59,6 +60,13 @@ const Experience = () => {
 								<small className="text-light"> Basico </small>
 							</div>
 						</article>
+						<article className="experience__details">
+							<SiGit className="experience__details-icon" />
+							<div>
+								<h4>Git</h4>
+								<small className="text-light"> Intermedio </small>
+							</div>
+						</article>
 					</div>
 				</div>
 				<div className="experience__backend">
@@ -93,10 +101,10 @@ const Experience = () => {
 							</div>
 						</article>
 						<article className="experience__details">
-							<SiGit className="experience__details-icon" />
+							<SiDocker className="experience__details-icon" />
 							<div>
-								<h4>Git</h4>
-								<small className="text-light"> Intermedio </small>
+								<h4>Docker</h4>
+								<small className="text-light"> Basico </small>
 							</div>
 						</article>
 						<article className="experience__details">

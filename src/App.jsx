@@ -5,7 +5,6 @@ import Experience from './components/experience/Experience';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Portfolio from './components/portfolio/Portfolio';
-import Services from './components/services/Services';
 
 function App() {
 	return (
@@ -13,10 +12,9 @@ function App() {
 			<Header />
 			<About />
 			<Experience />
-			<Services />
-			{/*       <Portfolio />
-      <Contact />
-      <Footer /> */}
+			<Portfolio />
+			<Contact />
+			<Footer />
 		</>
 	);
 }

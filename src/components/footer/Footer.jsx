@@ -19,30 +19,12 @@ const Footer = () => {
 					<a href="#experience">Experiencia</a>
 				</li>
 				<li>
-					<a href="#services">Servicios</a>
-				</li>
-				<li>
 					<a href="#portfolio">Portafolio</a>
 				</li>
 				<li>
 					<a href="#contact">Contacto</a>
 				</li>
 			</ul>
-			<footer className="footer__socials">
-				<a href="https://facebook.com">
-					<FaFacebookF />
-				</a>
-				<a href="https://instagram.com">
-					<FaInstagram />
-				</a>
-				<a href="https://github.com">
-					<FaGithub />
-				</a>
-				<a href="https://linkedin.com">
-					<FaLinkedin />
-				</a>
-			</footer>
-
 			<div className="footer__copyright">
 				<small>
 					&copy; Juan Camilo Sanchez Portafolio. todos los derechos reservados.
