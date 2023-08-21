@@ -8,9 +8,6 @@ import './footer.css';
 const Footer = () => {
 	return (
 		<footer>
-			<a href="#" className="footer__logo">
-				Juan Camilo Sanchez
-			</a>
 			<ul className="permalinks">
 				<li>
 					<a href="#">Inicio</a>
@@ -26,9 +23,6 @@ const Footer = () => {
 				</li>
 				<li>
 					<a href="#portfolio">Portafolio</a>
-				</li>
-				<li>
-					<a href="#testimonial">Testimonios</a>
 				</li>
 				<li>
 					<a href="#contact">Contacto</a>
