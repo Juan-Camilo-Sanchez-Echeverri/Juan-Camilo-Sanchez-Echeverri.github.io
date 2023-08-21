@@ -1,6 +1,5 @@
 import React from "react";
 import HV from "./HV";
-import ME from '../../assets/me.png'
 import HeaderSocial from "./HeaderSocial";
 import "./header.css";
 import Nav from "../nav/Nav";

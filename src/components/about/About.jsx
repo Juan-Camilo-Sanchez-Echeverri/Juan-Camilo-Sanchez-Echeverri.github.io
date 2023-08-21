@@ -1,51 +1,49 @@
-import React from "react";
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
-import ME from "../../assets/me-about.jpg";
-import "./about.css";
+import React from 'react';
+import { BsInfoCircle, BsFolderCheck } from 'react-icons/bs';
+import ME from '../../assets/img/fotoDePerfil.jpg';
+import './about.css';
 
 const About = () => {
-  return (
-    <section id="about">
-      <h5> Acerca de mi</h5>
-      <h2>Mi perfil</h2>
+	return (
+		<main>
+			<section id="about">
+				<h5> Acerca de mi</h5>
+				<h2>Mi perfil</h2>
 
-      <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="About Image" />
-          </div>
-        </div>
+				<article className="container about__container">
+					<div className="about__me">
+						<div className="about__me-image">
+							<img src={ME} alt="Foto Juan" />
+						</div>
+					</div>
 
-        <div className="about__content">
-          <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experiencia</h5>
-              <small>3+ años desarrollando</small>
-            </article>
-            <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Clientes</h5>
-              <small>300+ clientes satisfechos</small>
-            </article>
-            <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
-              <h5>Proyectos</h5>
-              <small>30+ proyectos</small>
-            </article>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, excepturi placeat illo fugit dolorem minima voluptate laudantium aut aspernatur sunt inventore corporis cupiditate officia cumque perferendis est totam quaerat nulla?
-          </p>
-          <a href="#contact" className="btn btn-primary">
-            Contacto
-          </a>
-        </div>
-      </div>
-    </section>
-  );
+					<div className="about__content">
+						<div className="about__cards">
+							<article className="about__card">
+								<BsInfoCircle />
+								<h5>Experiencia</h5>
+								<small>6 Meses Desarrollando y aprendizaje autonomo</small>
+							</article>
+							<article className="about__card">
+								<BsFolderCheck />
+								<h5>Proyectos</h5>
+								<small>3+ proyectos</small>
+							</article>
+						</div>
+						<p>
+							Desarrollador <strong>Node</strong> con manejo de tecnologías de
+							Express y nest,bases de datos relacionales como MySQL y no
+							relacionales como MongoDB. Con muchas ganas de aprender y aplicar
+							sus conocimientos.
+						</p>
+						<a href="#contact" className="btn btn-primary">
+							Contacto
+						</a>
+					</div>
+				</article>
+			</section>
+		</main>
+	);
 };
 
 export default About;
