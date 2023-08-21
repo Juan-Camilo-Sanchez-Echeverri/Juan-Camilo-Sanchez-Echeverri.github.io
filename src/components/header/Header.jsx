@@ -3,6 +3,7 @@ import HV from "./HV";
 import ME from '../../assets/me.png'
 import HeaderSocial from "./HeaderSocial";
 import "./header.css";
+import Nav from "../nav/Nav";
 
 const Header = () => {
   return (
@@ -15,6 +16,7 @@ const Header = () => {
         <HeaderSocial />
         <a href="#contact" className="scroll__down">Contacto</a>
       </section>
+      <Nav />
     </header>
   );
 };
