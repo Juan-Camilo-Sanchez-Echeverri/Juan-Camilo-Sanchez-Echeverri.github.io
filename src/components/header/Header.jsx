@@ -1,5 +1,5 @@
 import React from "react";
-import CTA from "./CTA";
+import HV from "./HV";
 import ME from '../../assets/me.png'
 import HeaderSocial from "./HeaderSocial";
 import "./header.css";
@@ -7,19 +7,14 @@ import "./header.css";
 const Header = () => {
   return (
     <header>
-      <div className="container header__container">
-        <h5>Hola, Yo soy</h5>
-        <h1>JVBrian</h1>
-        <h5 className="text-light">Desarrollador Fullstack</h5>
-        <CTA />
+      <section className="header__container">
+        <h5>Hey Bienvenido. Soy</h5>
+        <h1>Camilo Sanchez</h1>
+        <h5 className="text-light">Desarrollador Backend Jr</h5>
+        <HV />
         <HeaderSocial />
-
-        <div className="me">
-          <img src={ME} alt="" />
-        </div>
-
-        <a href="#contact" className="scroll__down">Scroll Down</a>
-      </div>
+        <a href="#contact" className="scroll__down">Contacto</a>
+      </section>
     </header>
   );
 };
