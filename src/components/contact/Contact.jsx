@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
@@ -7,25 +7,18 @@ import './contact.css';
 
 const Contact = () => {
 	const form = useRef();
+	const [done, setDone] = useState(false);
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		emailjs
-			.sendForm(
-				'service_sqa3iwu',
-				'template_mdlop3c',
-				form.current,
-				'mIKp7vVSO4nUpZqNg'
-			)
-			.then(
-				(result) => {
-					console.log(result.text);
-					form.current.reset();
-				},
-				(error) => {
-					console.log(error.text);
-				}
-			);
+		emailjs.sendForm(
+			'service_sqa3iwu',
+			'template_mdlop3c',
+			form.current,
+			'mIKp7vVSO4nUpZqNg'
+		);
+		setDone(true);
+		e.target.reset();
 	};
 
 	return (
@@ -83,7 +76,7 @@ const Contact = () => {
 					<button type="submit" class="btn btn-primary" value="Send">
 						Enviar mensaje
 					</button>
-					<span></span>
+					<span>{done && 'Gracias por dejar tu mensaje'}</span>
 				</form>
 			</div>
 		</section>
