@@ -1,7 +1,7 @@
 import React from 'react';
 import encriptador from '../../assets/img/encriptador.jpg';
 import direkTrans from '../../assets/img/direk-trans.jpg';
-import toDoBackend from '../../assets/img/toDoBackend.jpg';
+import msUsuarios from '../../assets/img/ms-usuarios.jpg';
 import blackJack from '../../assets/img/black-jack.jpg';
 import toysDashboard from '../../assets/img/toysDashboard.jpg';
 import pirateHub from '../../assets/img/pirateHub.jpg';
@@ -25,10 +25,10 @@ const data = [
 	},
 	{
 		id: 3,
-		image: toDoBackend,
-		title: 'ToDo Backend',
-		github: 'https://github.com/Juan-Camilo-Sanchez-Echeverri/ToDo-API-Node',
-		demo: 'https://tasksnode.fly.dev/',
+		image: msUsuarios,
+		title: 'Microservicios Usuarios',
+		github: 'https://github.com/Juan-Camilo-Sanchez-Echeverri/ms-usuarios',
+		demo: 'https://ms-usuarios.fly.dev/',
 	},
 	{
 		id: 4,
