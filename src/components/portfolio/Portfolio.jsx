@@ -7,45 +7,45 @@ import toysDashboard from '../../assets/img/toysDashboard.jpg';
 import pirateHub from '../../assets/img/pirateHub.jpg';
 import './portfolio.css';
 
-const URL_BASE = 'https://juancamilosanchez.tech';
+const URL_WEB = 'https://juancamilosanchez.tech';
+const URL_GIT_HUB = 'https://github.com/Juan-Camilo-Sanchez-Echeverri';
 
 const data = [
   {
     image: encriptador,
     title: 'Encriptador De Texto',
-    github:
-      'https://github.com/Juan-Camilo-Sanchez-Echeverri/encriptador-Texto',
-    demo: `${URL_BASE}/encriptador-Texto`,
+    github: `${URL_GIT_HUB}/encriptador-Texto`,
+    demo: `${URL_WEB}/encriptador-Texto`,
   },
   {
     image: direkTrans,
     title: 'Direk Trans',
-    github: 'https://github.com/Juan-Camilo-Sanchez-Echeverri/Direk-Trans',
-    demo: 'https://github.com/Juan-Camilo-Sanchez-Echeverri/Direk-Trans',
+    github: `${URL_GIT_HUB}/Direk-Trans`,
+    demo: `${URL_GIT_HUB}/Direk-Trans`,
   },
   {
     image: calculadoraPropinas,
     title: 'Calculadora de Propinas y Consumo',
-    github: 'https://github.com/Juan-Camilo-Sanchez-Echeverri/ms-usuarios',
-    demo: `${URL_BASE}/calculadora-propinas`,
+    github: `${URL_GIT_HUB}/calculadora-propinas`,
+    demo: `${URL_WEB}/calculadora-propinas`,
   },
   {
     image: blackJack,
     title: 'Black Jack',
-    github: 'https://github.com/Juan-Camilo-Sanchez-Echeverri/black-Jack',
-    demo: `${URL_BASE}/black-Jack`,
+    github: `${URL_GIT_HUB}/black-Jack`,
+    demo: `${URL_WEB}/black-Jack`,
   },
   {
     image: toysDashboard,
     title: 'Toys Dashboard',
-    github: 'https://github.com/Juan-Camilo-Sanchez-Echeverri/toys',
-    demo: `${URL_BASE}/toys`,
+    github: `${URL_GIT_HUB}/toys`,
+    demo: `${URL_WEB}/toys`,
   },
   {
     image: pirateHub,
     title: 'Pirate Hub',
-    github: 'https://github.com/Juan-Camilo-Sanchez-Echeverri/pirateHub',
-    demo: `${URL_BASE}/pirateHub`,
+    github: `${URL_GIT_HUB}/pirateHub`,
+    demo: `${URL_WEB}/pirateHub`,
   },
 ];
 
