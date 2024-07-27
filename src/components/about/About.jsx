@@ -22,12 +22,12 @@ const About = () => {
 							<article className="about__card">
 								<BsInfoCircle />
 								<h5>Experiencia</h5>
-								<small>6 Meses Desarrollando y aprendizaje autonomo</small>
+								<small>+1 año </small>
 							</article>
 							<article className="about__card">
 								<BsFolderCheck />
 								<h5>Proyectos</h5>
-								<small>3+ proyectos</small>
+								<small>10+ proyectos</small>
 							</article>
 						</div>
 						<p>
