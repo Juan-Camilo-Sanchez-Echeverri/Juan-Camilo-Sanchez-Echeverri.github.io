@@ -1,52 +1,64 @@
 .portfolio__container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
 }
 
 .portfolio__item {
-	background: var(--color-bg-variant);
-	padding: 1.3rem;
-	border-radius: 2rem;
-	border: 1px solid transparent;
-	transition: var(--transition);
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
 }
 
 .portfolio__item:hover {
-	border-color: var(--color-primary-variant);
-	background: transparent;
+  border-color: var(--color-primary-variant);
+  background: transparent;
 }
 
 .portfolio__item-image {
-	border-radius: 1.5rem;
-	overflow: hidden;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  width: 100%;
+  height: 200px; /* Establecer una altura fija */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajustar la imagen para que cubra el contenedor */
 }
 
 .portfolio__item h3 {
-	margin: 1.2rem 0 2rem;
-	text-align: center;
+  margin: 1.2rem 0 2rem;
 }
 
 .portfolio__item-cta {
-	display: flex;
-	gap: 1rem;
-	margin-bottom: 1rem;
-	justify-content: center;
+  display: flex;
+  gap: 1rem;
+  margin-top: auto; /* Empujar los botones hacia la parte inferior del contenedor */
+  justify-content: center;
 }
-
-/* =============== Responsive (Dispositivos gama media) =============== */
 
 @media screen and (max-width: 1024px) {
-	.portfolio__container {
-		grid-template-columns: 1fr 1fr;
-		gap: 1.2rem;
-	}
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
 }
-/* =============== Responsive (Dispositivos gama baja) =============== */
 
 @media screen and (max-width: 600px) {
-	.portfolio__container {
-		grid-template-columns: 1fr;
-		gap: 1rem;
-	}
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
