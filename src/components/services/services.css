@@ -1,72 +1,54 @@
 .services__container {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-.service {
-	background: var(--color-bg-variant);
-	border-radius: 0 0 2rem 2rem;
-	border: 1px solid var(--color-primary);
-	height: fit-content;
-	transition: var(--transition);
+.service__card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: var(--transition);
 }
 
-.service:hover {
-	background: transparent;
-	border-color: var(--color-primary-variant);
-	cursor: default;
+.service__card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-5px);
 }
 
-.service__head {
-	background: var(--color-primary);
-	padding: 2rem;
-	border-radius: 0 0 2rem 2rem;
-	box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+.service__icon {
+  display: inline-flex;
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  background: var(--color-primary-variant);
 }
 
-.service__head h3 {
-	color: var(--color-bg);
-	font-size: 1rem;
-	text-align: center;
+.service__title {
+  font-size: 1.1rem;
+  color: var(--color-white);
+  margin-bottom: 0.8rem;
 }
 
-.service__list {
-	padding: 2rem;
+.service__description {
+  font-size: 0.85rem;
+  color: var(--color-light);
+  line-height: 1.7;
 }
-
-.service__list li {
-	display: flex;
-	gap: 1rem;
-	margin-bottom: 0.8rem;
-}
-
-.service__list-icon {
-	color: var(--color-primary);
-	margin-top: 2px;
-}
-
-.service__list p {
-	font-size: 0.9rem;
-}
-
-/* =============== Responsive (Dispositivos gama media) =============== */
 
 @media screen and (max-width: 1024px) {
-	.services__container {
-		grid-template-columns: 1fr 1fr;
-		gap: 2rem;
-	}
-
-	.service {
-		height: auto;
-	}
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-/* =============== Responsive (Dispositivos gama baja) =============== */
 
 @media screen and (max-width: 600px) {
-	.services__container {
-		grid-template-columns: 1fr;
-		gap: 1.5rem;
-	}
+  .services__container {
+    grid-template-columns: 1fr;
+  }
 }
