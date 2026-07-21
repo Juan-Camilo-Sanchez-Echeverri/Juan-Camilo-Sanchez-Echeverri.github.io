@@ -1,42 +1,45 @@
-import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
-import { HV } from './HV'
-import './header.css'
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { HV } from './HV';
+import './header.css';
 
 const roles: string[] = [
+  'Backend sólido desde el primer sprint',
+  'Arquitecturas escalables en NestJS',
+  'Código listo para producción',
   'Ingeniero de Software',
   'Desarrollador Backend Node.js',
   'Especialista en NestJS',
   'Arquitectura de Microservicios',
-]
+];
 
 export const Header = () => {
-  const [roleIndex, setRoleIndex] = useState(0)
-  const [displayText, setDisplayText] = useState('')
-  const [isDeleting, setIsDeleting] = useState(false)
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [displayText, setDisplayText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const currentRole = roles[roleIndex]
-    let timeout: ReturnType<typeof setTimeout>
+    const currentRole = roles[roleIndex];
+    let timeout: ReturnType<typeof setTimeout>;
 
     if (!isDeleting && displayText.length < currentRole.length) {
       timeout = setTimeout(() => {
-        setDisplayText(currentRole.slice(0, displayText.length + 1))
-      }, 80)
+        setDisplayText(currentRole.slice(0, displayText.length + 1));
+      }, 80);
     } else if (!isDeleting && displayText.length === currentRole.length) {
-      timeout = setTimeout(() => setIsDeleting(true), 2000)
+      timeout = setTimeout(() => setIsDeleting(true), 2000);
     } else if (isDeleting && displayText.length > 0) {
       timeout = setTimeout(() => {
-        setDisplayText(currentRole.slice(0, displayText.length - 1))
-      }, 40)
+        setDisplayText(currentRole.slice(0, displayText.length - 1));
+      }, 40);
     } else if (isDeleting && displayText.length === 0) {
-      setIsDeleting(false)
-      setRoleIndex((prev) => (prev + 1) % roles.length)
+      setIsDeleting(false);
+      setRoleIndex((prev) => (prev + 1) % roles.length);
     }
 
-    return () => clearTimeout(timeout)
-  }, [displayText, isDeleting, roleIndex])
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, roleIndex]);
 
   return (
     <header id="#">
@@ -58,8 +61,15 @@ export const Header = () => {
             <span className="header__role-suffix">{' }'}</span>
           </div>
           <p className="header__description">
-            Ingeniero de Software con <strong>3+ años</strong> construyendo
-            soluciones backend escalables con Node.js, NestJS y microservicios.
+            Tu backend, bien hecho desde el primer sprint. Diseño e implemento{' '}
+            <strong>APIs RESTful y microservicios</strong> escalables con
+            Node.js y NestJS. Para startups y equipos que no pueden permitirse
+            reescribir el código en 6 meses.
+          </p>
+          <p className="header__tech-stack">
+            NestJS &middot; Node.js &middot; AWS &middot; Docker &mdash;{' '}
+            <strong>3+ años</strong> entregando backend sólido para productos
+            reales.
           </p>
           <HV />
           <div className="header__socials">
@@ -83,5 +93,5 @@ export const Header = () => {
         </motion.div>
       </div>
     </header>
-  )
-}
+  );
+};

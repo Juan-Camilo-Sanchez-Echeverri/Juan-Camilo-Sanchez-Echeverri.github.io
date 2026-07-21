@@ -14,14 +14,15 @@
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"react-icons": "^4.3.1",
-"react-intersection-observer": "^10.1.0",
+		"react-intersection-observer": "^10.1.0",
 		"swiper": "^12.1.2"
 	},
 	"devDependencies": {
 		"@types/react": "^19.2.17",
 		"@types/react-dom": "^19.2.3",
 		"@vitejs/plugin-react": "^1.0.7",
-"typescript": "^7.0.2",
-		"vite": "^6.4.1"
+		"typescript": "^7.0.2",
+		"vite": "^6.4.1",
+		"vite-plugin-sitemap": "^0.8.2"
 	}
 }
